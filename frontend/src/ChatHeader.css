@@ -1,0 +1,35 @@
+body,
+html {
+  margin: 0;
+  background: linear-gradient(#000000, #0057fa, #000000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.1rem;
+}
+
+.user_info {
+  margin-left: -5px;
+  align-items: center;
+}
+
+.rounded-circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.msg_head {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+
+.card-header {
+  /* No longer needed */
+}
