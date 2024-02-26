@@ -2,7 +2,20 @@ const fs = require("fs");
 const http = require("http");
 const socketIO = require("socket.io");
 
-const main = http.createServer();
+//const main = http.createServer();
+const main = http.createServer((req, res) => {
+  // Set the response HTTP header with a status code and content type
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+
+  // Check the request URL and method
+  if (req.url === '/test' && req.method === 'GET') {
+    // If the request is to the "/test" path with a GET method
+    res.end('Testing route works!\n');
+  } else {
+    // For all other requests
+    res.end('Hello, World---!\n');
+  }
+});
 const io = socketIO(main, {
   cors: {
     origin: "*",
@@ -117,7 +130,8 @@ function keywordSpottingAlgorithm(input, chatHistory) {
   }
 }
 
-const port = 8000;
+
+const port = process.env.PORT || 8000
 
 main.listen(port, () => {
 
