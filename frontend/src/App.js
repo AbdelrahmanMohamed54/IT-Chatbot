@@ -1,8 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
 import ChatHeader from './ChatHeader';
-import ChatMessage from './ChatMessage';
-import InputField from './InputField';
+//import ChatMessage from './ChatMessage';
+//import InputField from './InputField';
 import Message from './Message';
 
 import './App.css'; // Import the CSS file
@@ -26,8 +26,12 @@ const App = () => {
   return (
     <div className="container-fluid h-100">
       <div className="row justify-content-center align-items-center h-100">
-        <div className="" style={{ minWidth: '300px', maxWidth: '800px' }}>
-          <div className="card" style={{ height: Math.min(800, windowHeight - 60) }}>
+        <div className=""
+        // style={{ minWidth: '300px', maxWidth: '800px' }}
+        >
+          <div className="card"
+          // style={{ height: Math.min(800, windowHeight - 60) }}
+          >
             <ChatHeader />
             <Message/>
           </div>
