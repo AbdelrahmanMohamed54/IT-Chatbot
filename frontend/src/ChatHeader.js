@@ -14,7 +14,7 @@ const ChatHeader = () => {
           <span className="online_icon"></span>
         </div>
         <div className="user_info">
-          <span style={{ color: 'white', fontSize: 35 }}>BMW Chatbot</span>
+          <span className="user_info">BMW Chatbot</span>
         </div>
       </div>
     </div>
