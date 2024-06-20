@@ -1,4 +1,4 @@
-# BMW-IT-Chatbot
+# Chatbot
 
 ## Project Description
 
